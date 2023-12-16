@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Demonstration</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #efa1ee
+        }
+
+        th {
+            background-color: #620363;
+            color: white;
+        }
+
+        .button {
+            position: relative;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid rgb(93, 82, 141);
+            background: rgba(174, 117, 181, 0.5);
+            color: rgb(84, 30, 41);
+            outline: none;
+            border-radius: 10px;
+            font-size: 25px;
+            width: 300px;
+        }
+
+        .button:hover {
+            background: white;
+        }
+    </style>
+
+    <script>
+        function loadXMLDoc() {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    empDetails(this);
+                }
+            };
+            xmlhttp.open("GET", "file.xml", true);
+            xmlhttp.send();
+        }
+        function empDetails(xml) {
+            var i;
+            var xmlDoc = xml.responseXML;
+            var table =
+                `<tr><th>Firstname</th><th>Lastname</th>
+					<th>Title</th><th>Room</th>
+				</tr>`;
+            var x = xmlDoc.getElementsByTagName("employee");
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("firstname")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("lastname")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("title")[0]
+                        .childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("room")[0]
+                        .childNodes[0].nodeValue + "</td></tr>";
+            }
+            document.getElementById("id").innerHTML = table;
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <button type="button" class="button" onclick="loadXMLDoc()">
+            Employees Details
+        </button>
+    </center>
+    <br><br>
+    <table id="id"></table>
+</body>
+
+</html>

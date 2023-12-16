@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lab11.xsl"?>
+<bookslibrary>
+  <book>
+    <title>Return of a King</title>
+    <author>William Dalrymple</author>
+    <company>Bloomsberg</company>
+    <price>400</price>
+  </book>
+  <book>
+    <title>Aurangzeb</title>
+    <author>Audrey Truschke</author>
+    <company>Penguin</company>
+    <price>300</price>
+  </book>
+  <book>
+    <title>The Idea of Justice</title>
+    <author>Amartya Sen</author>
+    <company>Penguin</company>
+    <price>500</price>
+  </book>  
+</bookslibrary>

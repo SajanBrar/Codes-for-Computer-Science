@@ -1,0 +1,26 @@
+<employees>
+	<employee id="1">
+		<firstname>abc</firstname>
+		<lastname>def</lastname>
+		<title>Engineer</title>
+		<room>19</room>
+	</employee>
+	<employee id="2">
+		<firstname>ghi</firstname>
+		<lastname>jkl</lastname>
+		<title>Accountant</title>
+		<room>14</room>
+	</employee>
+	<employee id="3">
+		<firstname>mno</firstname>
+		<lastname>pqr</lastname>
+		<title>Manager</title>
+		<room>21</room>
+	</employee>
+	<employee id="4">
+		<firstname>stu</firstname>
+		<lastname>vwx</lastname>
+		<title>Engineer</title>
+		<room>22</room>
+	</employee>
+</employees>

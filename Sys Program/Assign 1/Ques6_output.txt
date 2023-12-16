@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float radius = 5.0;
+    float area = 3.14159 * radius * radius;
+    int maxValue = 100;
+    
+    cout << "Area of the circle: " << area << endl;
+    cout << "Max value: " << maxValue << endl;
+
+    return 0;
+}

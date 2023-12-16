@@ -1,0 +1,17 @@
+// This is a single-line comment
+
+#include <stdio.h>
+
+/* This is a multiline comment
+   spanning multiple lines. */
+
+int main() {
+    int a = 5; // This is another single-line comment
+    /* This is also a multiline comment
+       that has been closed. */
+    printf("Hello, world!\n");
+    int x = 67;
+    int y = 12;
+    float z = 13.55;
+    return 0;
+}

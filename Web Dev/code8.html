@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            max-width: 400px;
+        }
+
+        #display {
+            text-align: right;
+            height: 70px;
+            line-height: 70px;
+            padding: 16px 16px;
+            font-size: 25px;
+            border-top: 5px;
+        }
+
+        .buttons {
+            display: grid;
+            border-bottom: 1px solid #999;
+            border-left: 1px solid #999;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .button {
+            border: 0.5px solid #999;
+            line-height: 100px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        #equal {
+            background-color: rgb(85, 85, 255);
+            color: white;
+        }
+
+        .button:hover {
+            background-color: #323330;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container" id="cal">
+            <div id="display"></div>
+            <div class="buttons">
+                <div class="button">C</div>
+                <div class="button">/</div>
+                <div class="button">*</div>
+                <div class="button">&larr;</div>
+                <div class="button">x <sup>y</sup> </div>
+                <div class="button">7</div>
+                <div class="button">8</div>
+                <div class="button">9</div>
+                <div class="button">-</div>
+                <div class="button"> sin </div>
+                <div class="button">4</div>
+                <div class="button">5</div>
+                <div class="button">6</div>
+                <div class="button">+</div>
+                <div class="button"> cos </div>
+                <div class="button">1</div>
+                <div class="button">2</div>
+                <div class="button">3</div>
+                <div class="button">.</div>
+                <div class="button"> tan </div>
+                <div class="button"> log </div>
+                <div class="button">(</div>
+                <div class="button">0</div>
+                <div class="button">)</div>
+                <div id="equal" class="button">=</div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

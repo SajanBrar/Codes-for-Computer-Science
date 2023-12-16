@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "yes" ?>
+<!DOCTYPE biodata [
+   <!ELEMENT biodata (name, rollno, phone, college, branch, degree)>
+   <!ELEMENT name (#PCDATA)>
+   <!ELEMENT rollno (#PCDATA)>
+   <!ELEMENT phone (#PCDATA)>
+   <!ELEMENT college (#PCDATA)>
+   <!ELEMENT branch (#PCDATA)>
+   <!ELEMENT degree (#PCDATA)>
+]>
+
+<biodata>
+   <name>Sajanjit Singh Brar</name>
+   <rollno>20124087</rollno>
+   <phone>0123456789</phone>
+   <college>NIT Jalandhar<college>
+   <branch>Information Technology<branch>
+   <degree>B Tech<degree>
+</biodata>
